@@ -243,9 +243,7 @@ export default function PrimarySearchAppBar() {
       {renderMobileMenu}
       {renderMenu}
       {matches1 &&
-      <Appbar>
-      <Toolbar>
-        <Box sx={{ }} minHeight="68px" >
+        <Box sx={{ backgroundColor: "#007bff" }} minHeight="68px" >
           <Search>
             <SearchIconWrapper>
               <Button sx={{ backgroundColor: '#ff8319', color: 'white' }}>
@@ -257,9 +255,7 @@ export default function PrimarySearchAppBar() {
               inputProps={{ "aria-label": "search" }}
             />
           </Search>
-        </Box>
-        </Toolbar>
-        </Appbar>}
+        </Box>}
     </Box>
   );
 }
