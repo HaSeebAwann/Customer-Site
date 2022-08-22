@@ -243,6 +243,7 @@ export default function PrimarySearchAppBar() {
       {renderMobileMenu}
       {renderMenu}
       {matches1 &&
+      <Appbar>
       <Toolbar>
         <Box sx={{ }} minHeight="68px" >
           <Search>
@@ -257,7 +258,8 @@ export default function PrimarySearchAppBar() {
             />
           </Search>
         </Box>
-        </Toolbar>}
+        </Toolbar>
+        </Appbar>}
     </Box>
   );
 }
