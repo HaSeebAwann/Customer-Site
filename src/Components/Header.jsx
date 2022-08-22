@@ -166,10 +166,10 @@ export default function PrimarySearchAppBar() {
   return (
     <Box sx={{
       flexGrow: 1, ".css-hip9hq-MuiPaper-root-MuiAppBar-root": {
-        backgroundColor: "#007bff",
+        backgroundColor: "#007bff ! important",
       }
     }} className="header-section d-none d-xl-block ">
-      <AppBar position="static" sx={{ ".css-hyum1k-MuiToolbar-root ": { minHeight: "80px", backgroundColor: "#007bff" } }} className='container'>
+      <AppBar position="static" sx={{ ".css-hyum1k-MuiToolbar-root ": { minHeight: "80px", backgroundColor: "#007bff ! important" } }} className='container'>
         <Toolbar>
           <Button>
             <img
