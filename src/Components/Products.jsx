@@ -34,7 +34,7 @@ export default function Products() {
     autoplay: false,
     infinite: true,
     arrows: false,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
   };
   return (
     <Box sx={{ backgroundColor: "white", padding: "20px", margin: "1% 2%" }}>

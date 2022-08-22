@@ -57,38 +57,7 @@ export default function MensProduct() {
     autoplay: false,
     infinite: true,
     arrows: false,
-    slidesToShow: 6,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 5,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-        },
-      },
-    ],
+    slidesToScroll: 2,
   };
   return (
     <Box sx={{ backgroundColor: "white", padding: "20px", margin: "2% 2%" }}>
@@ -101,18 +70,25 @@ export default function MensProduct() {
         <Box>
           <Slider {...settings}>
             {products.map((value, index) => (
-              <Box key={index} >
+              <Box key={index}>
+              <Box>
                 <img
                   alt="bazaarghar"
                   className="productimg-btn"
                   width="200px"
-                  height="200px%"
+                  height="auto"
                   src={value.img}
                 />
-                <Typography sx={{ color: "rgb(255, 131, 25)", textAlign: "start" }}>
-                  {value.price + " PKR"}</Typography>
-                <Typography sx={{ fontSize: "14px", textAlign: "start" }}>{value.discription}</Typography>
+                <Typography
+                  sx={{ color: "rgb(255, 131, 25)", textAlign: "start" }}
+                >
+                  {value.price + " PKR"}
+                </Typography>
+                <Typography sx={{ fontSize: "14px", textAlign: "start" }}>
+                  {value.discription}
+                </Typography>
               </Box>
+            </Box>
             ))}
           </Slider>
         </Box>
