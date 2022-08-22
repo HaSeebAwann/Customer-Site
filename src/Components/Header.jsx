@@ -243,7 +243,7 @@ export default function PrimarySearchAppBar() {
       {renderMobileMenu}
       {renderMenu}
       {matches1 &&
-        <Box sx={{ backgroundColor: "rgb(25, 118, 210) ! imporatant" }} minHeight="68px" >
+        <Box sx={{".css-kcq9zm":{backgroundColor: "rgb(25, 118, 210) ! imporatant"} }} minHeight="68px" >
           <Search>
             <SearchIconWrapper>
               <Button sx={{ backgroundColor: '#ff8319', color: 'white' }}>
