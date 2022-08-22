@@ -165,7 +165,7 @@ export default function PrimarySearchAppBar() {
   );
   return (
     <Box sx={{
-      flexGrow: 1, ".css-hip9hq-MuiPaper-root-MuiAppBar-root": {
+      flexGrow: 1, "..css-kyoxu8": {
         backgroundColor: "#007bff ! important",
       }
     }} className="header-section d-none d-xl-block ">
