@@ -164,6 +164,7 @@ export default function PrimarySearchAppBar() {
     </Menu>
   );
   return (
+    <Box sx={headerBg}>
     <Box sx={{
       flexGrow: 1, ".css-hip9hq-MuiPaper-root-MuiAppBar-root": {
         backgroundColor: "#007bff",
@@ -243,7 +244,7 @@ export default function PrimarySearchAppBar() {
       {renderMobileMenu}
       {renderMenu}
       {matches1 &&
-        <Box sx={{ backgroundColor: "#007bff" }} minHeight="68px" >
+        <Box sx={headerBg} minHeight="68px" >
           <Search>
             <SearchIconWrapper>
               <Button sx={{ backgroundColor: '#ff8319', color: 'white' }}>
@@ -257,5 +258,10 @@ export default function PrimarySearchAppBar() {
           </Search>
         </Box>}
     </Box>
+    </Box>
   );
 }
+
+const headerBg = {
+  ".css-kcq9zm": { backgroundColor: "#007bff" }
+};
