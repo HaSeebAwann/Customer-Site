@@ -170,7 +170,7 @@ export default function PrimarySearchAppBar() {
         backgroundColor: "#069ddd",
       }
     }} className="header-section d-none d-xl-block ">
-      <AppBar position="static" sx={{ ".css-hyum1k-MuiToolbar-root ": { minHeight: "80px", backgroundColor: "#069ddd" } }} className='container'>
+      <AppBar position="static" sx={{ ".css-i6s8oy ": { minHeight: "80px", backgroundColor: "#069ddd" } }} className='container'>
         <Toolbar>
           <Button>
             <img
@@ -265,5 +265,5 @@ export default function PrimarySearchAppBar() {
 }
 
 const headerBg = {
-  ".css-kcq9zm": { backgroundColor: "#069ddd" }
+  ".css-kcq9zm": { backgroundColor: "#069ddd" },
 };
