@@ -19,7 +19,7 @@ const LinksContainer = styled(Box)(({ theme }) => ({
 const NavBar = () => {
   return (
     <Box bgcolor="#FFFFFF" sx={{ display: { xs: "none", lg: "block" } }}>
-      <Container maxWidth="xl" sx={{ display: "flex" , marginLeft: '0' , marginRight:'0', boxSizing:'content-box' }}>
+      <Container maxWidth="100%" sx={{ display: "flex" , marginLeft: '0' , marginRight:'0' }}>
         <LinksContainer flexGrow={1}>
           <IconButton >
             <img
