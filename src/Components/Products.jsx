@@ -13,7 +13,7 @@ export default function Products() {
   const [discription, setDiscription] = useState([]);
   useEffect(() => {
     axios
-      .get("https://ecommerce-homepage.herokuapp.com/products/?page=1&limit=12")
+      .get("https://ecommerce-homepage.herokuapp.com/products/?page=1&limit=1000")
       .then((response) => {
         const products = response.data.result.docs.map((imag) => {
           return imag.images[0].location;
