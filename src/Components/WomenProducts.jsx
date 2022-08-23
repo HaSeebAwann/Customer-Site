@@ -48,7 +48,8 @@ export default function WomenProducts() {
     autoplay: false,
     infinite: true,
     arrows: false,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 4,
   };
   return (
     <Box sx={{ backgroundColor: "white", padding: "20px", margin: "2%" }}>

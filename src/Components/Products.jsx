@@ -34,7 +34,8 @@ export default function Products() {
     autoplay: false,
     infinite: true,
     arrows: false,
-    slidesToScroll: 2,
+    slidesToShow: 5,
+    slidesToScroll: 4,
   };
   return (
     <Box sx={{ backgroundColor: "white", padding: "20px", margin: "1% 2%" }}>
@@ -54,7 +55,7 @@ export default function Products() {
                     alt="bazaarghar"
                     className="productimg-btn"
                     width="200px"
-                    height="auto"
+                    height="200px"
                     src={value}
                   />
                   <Typography
