@@ -21,7 +21,7 @@ export default function Sidebar() {
                     <Box key={index} sx={{ display: "flex", justifyContent: "space-between", margin: "", boxSizing: "border-box", padding: "14px 0px" }}>
                         <Box sx={{ display: "flex" }}>
                             <Box sx={{ width: "30px", height: "30px"}}>
-                                <img alt='bazaarGhar' src={array.mainImage} width={"100%"} height={"100%"} />
+                                <img alt='bazaarGhar' src={array.mainImage} width={"100%"} height={"100%"} style={{borderRadius:"50%"}} />
                             </Box>
                             <Box sx={{ alignSelf: "center", padding: "0 8px" }}>
                                 <Typography sx={{fontSize:"14px" , fontWeight: "700"}}>{array.name}</Typography>

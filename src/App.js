@@ -1,5 +1,6 @@
 import Box from '@mui/material/Box';
 import Header from './Components/Header';
+import NavBar from './Components/NavBar';
 import Banners from './Components/Banners';
 import Products from './Components/Products';
 import WomenProducts from './Components/WomenProducts';

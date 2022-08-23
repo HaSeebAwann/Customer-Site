@@ -148,7 +148,7 @@ export default function PrimarySearchAppBar() {
             <FavoriteBorderOutlinedIcon />
           </Badge>
         </IconButton>
-        <p>Whishlist</p>
+        <p>Wishlist</p>
       </MenuItem>
       <MenuItem>
         <IconButton
@@ -167,10 +167,10 @@ export default function PrimarySearchAppBar() {
     <Box sx={headerBg}>
     <Box sx={{
       flexGrow: 1, ".css-hip9hq-MuiPaper-root-MuiAppBar-root": {
-        backgroundColor: "#007bff",
+        backgroundColor: "#069ddd",
       }
     }} className="header-section d-none d-xl-block ">
-      <AppBar position="static" sx={{ ".css-hyum1k-MuiToolbar-root ": { minHeight: "80px", backgroundColor: "#007bff" } }} className='container'>
+      <AppBar position="static" sx={{ ".css-hyum1k-MuiToolbar-root ": { minHeight: "80px", backgroundColor: "#069ddd" } }} className='container'>
         <Toolbar>
           <Button>
             <img
@@ -195,7 +195,7 @@ export default function PrimarySearchAppBar() {
             </Search>
           </Box>}
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex"} }}>
             <IconButton
               size="large"
               edge="end"
@@ -204,6 +204,7 @@ export default function PrimarySearchAppBar() {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
+              sx={{marginRight:"12px"}}
             >
               <Typography pr={1}>Login</Typography>
               <AccountCircleOutlinedIcon />
@@ -211,9 +212,10 @@ export default function PrimarySearchAppBar() {
             <IconButton
               size="large"
               color="inherit"
+              sx={{marginRight:"12px"}}
             >
-              <Typography pr={1}>Whishlist</Typography>
-              <Badge badgeContent={6} color="error">
+              <Typography pr={1}>Wishlist</Typography>
+              <Badge badgeContent={6} color="error" >
                 <FavoriteBorderOutlinedIcon />
               </Badge>
             </IconButton>
@@ -263,5 +265,5 @@ export default function PrimarySearchAppBar() {
 }
 
 const headerBg = {
-  ".css-kcq9zm": { backgroundColor: "#007bff" }
+  ".css-kcq9zm": { backgroundColor: "#069ddd" }
 };
