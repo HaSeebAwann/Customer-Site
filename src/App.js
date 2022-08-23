@@ -14,6 +14,7 @@ function App() {
   return (
     <Box className='container'>
 <Header />
+<NavBar />
 <Banners />
 <Products />
 <MensProduct />
